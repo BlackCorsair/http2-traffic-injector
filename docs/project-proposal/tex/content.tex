@@ -1,0 +1,68 @@
+\newpage
+\section{Introducción}
+El proyecto consiste en desarrollar mediante la metodología \emph{Extreme Programming}\cite{xp}, un inyector de tráfico HTTP2\cite{http2} que permita la automatización de pruebas \emph{no funcionales} en microservicios que exponen una API REST a través del protocolo HTTP2.
+
+Este proyecto estará desarrollado en C++20\cite{cpp}, aprovechando la librería \emph{nghttp}\cite{nghttp}.
+
+
+\section{Objetivos}
+\subsection{Generales}
+Con este proyecto se espera alcanzar los siguientes objetivos:
+
+\begin{itemize}
+    \item Inyector de tráfico HTTP2
+    \item Pruebas asociadas
+    \item Entorno de Integración Contínua
+    \item Documentación necesaria
+    \item Profundizar en la metodología \emph{Extreme Programming}
+\end{itemize}
+
+\subsection{Específicos}
+\begin{itemize}
+    \item Inyector de tráfico HTTP2
+    \begin{itemize}
+        \item Inyectar tráfico con operaciones simples
+        \item Inyectar tráfico con operaciones dobles
+        \item Ejecución mediante consola de comandos
+        \item Configuración del tráfico mediante ficheros \emph{yaml}
+    \end{itemize}
+    \item Pruebas asociadas
+    \begin{itemize}
+        \item Pruebas unitarias
+        \item Pruebnas End to End
+    \end{itemize}
+    \item Entorno de Integración Contínua
+    \begin{itemize}
+        \item Pipelines que permitan la aprobación del commit en el repositorio una vez pasado con éxito los tests
+        \item Pipelines que promocionen y versionen los artefactos generados
+    \end{itemize}
+    \item Documentación necesaria
+    \begin{itemize}
+        \item Modelo de vistas 4+1
+        \item Utilización del producto
+        \item Cómo cotribuir y utilizar el desarrollo de Integración Contínua
+    \end{itemize}
+\end{itemize}
+
+\section{Metodología}
+La metodología utilizada será \emph{Extreme Programming}.
+
+
+\newpage
+\begin{thebibliography}{Bibliografía}
+\bibitem{xp}
+Extreme Programming
+\\\url{https://www.tutorialspoint.com/extreme_programming/extreme\_programming\_introduction.htm}
+
+\bibitem{cpp}
+C++20
+\\\url{https://en.cppreference.com/w/cpp/20}
+
+\bibitem{http2}
+HTTP2
+\\\url{https://http2.github.io/}
+
+\bibitem{nghttp}
+nghttp
+\\\url{https://http2.github.io/}
+\end{thebibliography}
