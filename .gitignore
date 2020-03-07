@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+#Clion project
+.idea
+
+#CMake generated files
+cmake-build-debug
+
+#document files
+document.aux
+document.dvi
+document.fdb_latexmk
+document.fls
+document.log
+document.out.ps
+document.pdf
