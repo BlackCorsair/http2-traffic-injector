@@ -36,6 +36,18 @@
 
 #CMake generated files
 cmake-build-debug
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+googletest/
+src/CMakeFiles/
+src/Makefile
+src/cmake_install.cmake
+src/http2_traffic_injector
+test/CTestTestfile.cmake
+test/ut
 
 #document files
 document.aux
@@ -45,3 +57,4 @@ document.fls
 document.log
 document.out.ps
 document.pdf
+
