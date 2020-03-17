@@ -15,7 +15,7 @@ The project is developed in C++20 using the *nghttp* library.
 
 ## Building & running
 ### Pre-requirements
-* cmake >= 3.15
+* cmake >= 3.10
 * g++ >= 7 (to be changed)
 * git (to clone gtest)
 ### Manual build & run
