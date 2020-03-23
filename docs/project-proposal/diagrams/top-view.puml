@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+
+interface endpoint as ep
+ep - [SUT]
+interface control as co
+interface metrics as me
+
+node Traffic_generator {
+    queue outgoing_traffic_queue as otq
+    queue metrics_queue as mq
+    [traffic-sender] as tfs
+    queue incoming_traffic_qiueue as itq
+    [traffic-receiver] as tfr
+    [traffic-orchestrator] as tfo
+    [metrics-aggregator] as ma
+
+    tfo --> otq: push
+    tfo <-- itq: pull
+    tfo --> mq: push
+    tfs <-- otq: pull
+    tfr --> itq: push
+    tfs --( ep
+    tfr --( ep
+    mq --> ma: pull
+    co -- tfo
+    me -- ma
+}
+@enduml

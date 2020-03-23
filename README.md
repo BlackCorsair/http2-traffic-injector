@@ -15,25 +15,25 @@ The project is developed in C++20 using the *nghttp* library.
 
 ## Building & running
 ### Pre-requirements
-* cmake >= 3.15
+* cmake >= 3.10
 * g++ >= 7 (to be changed)
 * git (to clone gtest)
 ### Manual build & run
 ```console
-foo@bar:~$ mkdir cmake-bin
-foo@bar:~$ cd cmake-bin
-foo@bar:~$ cmake ..
-foo@bar:~$ cmake --build .
-foo@bar:~$ ctest #To run tests or...
-foo@bar:~$ test/ut #To run directly
-foo@bar:~$ src/http2-traffic-injector #To run main
+mkdir cmake-bin
+cd cmake-bin
+cmake ..
+cmake --build .
+ctest #To run tests or...
+test/ut #To run directly
+src/http2-traffic-injector #To run main
 ```
 ## Generating documentation
 ### Pre-requirements
 docker
 ### Manual create project-proposal
 ```console
-foo@bar:~$ docker pull hombrenieve/sw_craftmanship-latexmaker:pygments
-foo@bar:~$ docker run --rm -v "$(pwd)/docs/project-proposal":/doc hombrenieve/sw_craftmanship-latexmaker:pygments latexmk -shell-escape -pdf document.tex
+docker pull hombrenieve/sw_craftmanship-latexmaker:pygments
+docker run --rm -v "$(pwd)/docs/project-proposal":/doc hombrenieve/sw_craftmanship-latexmaker:pygments latexmk -shell-escape -pdf document.tex
 ```
 

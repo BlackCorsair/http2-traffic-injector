@@ -2,50 +2,44 @@
 \section{Introducción}
 El proyecto consiste en desarrollar mediante la metodología \emph{Extreme Programming}\cite{xp}, un inyector de tráfico HTTP2\cite{http2} que permita la automatización de pruebas \emph{no funcionales} en microservicios que exponen una API REST a través del protocolo HTTP2.
 
-Este proyecto estará desarrollado en C++20\cite{cpp}, aprovechando la librería \emph{nghttp}\cite{nghttp}.
-
+Este proyecto estará desarrollado en C++20\cite{cpp}, aprovechando la librería \emph{nghttp2}\cite{nghttp2}.
 
 \section{Objetivos}
 \subsection{Generales}
 Con este proyecto se espera alcanzar los siguientes objetivos:
-
 \begin{itemize}
-    \item Inyector de tráfico HTTP2
-    \item Pruebas asociadas
-    \item Entorno de Integración Contínua
-    \item Documentación necesaria
+    \item Un inyector de tráfico HTTP2 completamente funcional que permita
+    \item Pruebas asociadas en todas las fases del desarrollo
+    \item Alta calidad del codigo en todas las fases del desarrollo
     \item Profundizar en la metodología \emph{Extreme Programming}
 \end{itemize}
 
 \subsection{Específicos}
 \begin{itemize}
+    \item Para profundizar en la metodología \emph{Extreme Programming} se plantea el desarrollo en 2 fases:
+    \begin{itemize}
+        \item Primera fase en la que se plantea una funcionalidad sencilla y las pruebas del sistema
+        \item Segunda fase en la que se plantea una funcionalidad avanzada y se demuestra que se alcanza con facilidad el objetivo gracias al desarrollo basado en \emph{TDD}
+    \end{itemize}
     \item Inyector de tráfico HTTP2
     \begin{itemize}
-        \item Inyectar tráfico con operaciones simples
-        \item Inyectar tráfico con operaciones dobles
-        \item Ejecución mediante consola de comandos
+        \item Configurar y lanzar tráfico con un flujo simple (Primera fase)
+        \item Inyectar tráfico con un flujo mas completo (Segunda fase)
+        \item Ejecución mediante consola de comandos (arquitectura que permita ser extendida)
         \item Configuración del tráfico mediante ficheros \emph{yaml}
+        \item Resultados de las ejecuciones por consola de comandos o fichero (arquitectura que permita ser extendida)
     \end{itemize}
     \item Pruebas asociadas
     \begin{itemize}
         \item Pruebas unitarias
         \item Pruebas End to End
     \end{itemize}
-    \item Entorno de Integración Contínua
-    \begin{itemize}
-        \item Pipelines que permitan la aprobación del commit en el repositorio una vez pasado con éxito los tests
-        \item Pipelines que promocionen y versionen los artefactos generados
-    \end{itemize}
-    \item Documentación necesaria
-    \begin{itemize}
-        \item Modelo de vistas 4+1
-        \item Utilización del producto
-        \item Cómo cotribuir y utilizar el desarrollo de Integración Contínua
-    \end{itemize}
+    \item Mezclar la metodología \emph{Extreme Programming} con una fase inicial (Sprint-0) de planificación de la arquitectura\cite{design dead}
 \end{itemize}
 
 \section{Metodología}
-La metodología utilizada será \emph{Extreme Programming}.
+La metodología utilizada será \emph{Extreme Programming} aunque se planifique una arquitectura inicial con el objetivo
+de demostrar que se favorece la implementación de las pruebas ya que se facilita el diseño bottom-up.
 
 
 \newpage
@@ -62,7 +56,11 @@ C++20
 HTTP2
 \\\url{https://http2.github.io/}
 
-\bibitem{nghttp}
-nghttp
-\\\url{https://http2.github.io/}
+\bibitem{nghttp2}
+nghttp2
+\\\url{https://github.com/nghttp2/nghttp2}
+
+\bibitem{design dead}
+Is design dead?
+\\\url{https://www.martinfowler.com/articles/designDead.html}
 \end{thebibliography}

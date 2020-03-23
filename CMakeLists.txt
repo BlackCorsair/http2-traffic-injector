@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.10)
 
 #Set package versions
 set(GOOGLETEST_VERSION 1.8.0)
