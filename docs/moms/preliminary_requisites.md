@@ -21,4 +21,3 @@ the load so it matches the specified configuration **(Phase 1)**
 * Distributed: the injector should be able to be run in
 separated instances, so it can inject greater traffic **(Phase 3)**
 * Metric integration with other services like Prometheus **(Phase 3)**
-
