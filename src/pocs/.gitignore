@@ -1,0 +1,10 @@
+CMakeFiles
+CMakeCache.txt
+Makefile
+_deps
+cmake_*
+*.a
+reader
+vendor
+build
+
