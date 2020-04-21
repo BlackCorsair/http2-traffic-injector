@@ -1,5 +1,4 @@
 #include "parser.hh"
-#include "error_templates.hh"
 
 #include <rapidjson/document.h>
 #include <rapidjson/filereadstream.h>
@@ -7,12 +6,12 @@
 #include <iostream>
 #include <fstream>
 
-namespace config
+namespace parser
 {
-    Config_reader::Config_reader(): config_path("config.json")
+    parser::parser(): config_path("config.json")
     {};
 
-    Config_reader::Config_reader(const std::string& config_file_path)
+    parser::parser(const std::string& config_file_path)
                                 : config_path(config_file_path)
     {};
 
@@ -35,10 +34,10 @@ namespace config
         }
     }
 
-    config* Config_reader::parse_config() const
+    config::config* parser::parse_config() const
     {
         rapidjson::Document config_json = read_json_from_file(config_path);
-        return new config {
+        return new config::config {
                 config_json["dest_port"].GetInt(),
                 config_json["hostname"].GetString(),
                 config_json["threads"].GetInt(),

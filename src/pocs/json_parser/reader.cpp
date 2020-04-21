@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    config::Config_reader reader {};
+    parser::parser reader {};
     config::config* my_config = reader.parse_config();
     std::cout << my_config->toString() << std::endl;
 
