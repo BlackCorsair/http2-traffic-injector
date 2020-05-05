@@ -1,0 +1,9 @@
+{
+    "dest_port": 8080,
+    "hostname": "localhost",
+    "threads": 4,
+    "requests_per_minute": 1000,
+    "timeout_ms": 100,
+    "timeout_ms_threshold": 10,
+    "log_path": "log.log"
+}
